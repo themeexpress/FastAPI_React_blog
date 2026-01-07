@@ -1,0 +1,42 @@
+# --------------------
+# Python
+# --------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+.env.*
+*.log
+
+# --------------------
+# FastAPI / Uvicorn
+# --------------------
+*.sqlite3
+
+# --------------------
+# Node / React (future)
+# --------------------
+node_modules/
+dist/
+build/
+
+# --------------------
+# Docker
+# --------------------
+*.env
+docker-compose.override.yml
+
+# --------------------
+# OS / Editor
+# --------------------
+.DS_Store
+.idea/
+.vscode/
+
+# --------------------
+# Test / Coverage
+# --------------------
+.coverage
+htmlcov/
