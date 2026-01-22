@@ -1,4 +1,4 @@
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 from typing import List, Optional
 
 # --- Post Schemas ---
@@ -25,7 +25,7 @@ class UserBase(BaseModel):
     username: str
 
 class UserCreate(UserBase):
-    password: str
+    password: str = Field(..., min_length=4)
 
 class User(UserBase):
     id: int
